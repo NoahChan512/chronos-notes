@@ -3,65 +3,65 @@
     {
       "number": "001",
       "area": "Central Pier",
-      "locationClue": "Near the harbour, where the city opens into water.",
-      "dropWindow": "Sunset / early evening",
-      "internalNote": ""
+      "clue": "Near the harbour, where the city opens into water.",
+      "drop": "Sunset / early evening",
+      "internal": ""
     },
     {
       "number": "002",
       "area": "Kennedy Town",
-      "locationClue": "Find the quieter end of the tram line, where cafés meet the sea.",
-      "dropWindow": "Late afternoon",
-      "internalNote": ""
+      "clue": "Look for the edge of the island, close to coffee and sea wind.",
+      "drop": "Late afternoon",
+      "internal": ""
     },
     {
       "number": "003",
       "area": "Sheung Wan",
-      "locationClue": "Old walls, dried seafood streets, and staircases that remember names.",
-      "dropWindow": "Weekend afternoon",
-      "internalNote": ""
+      "clue": "Somewhere between old signs, stairs, and quiet shops.",
+      "drop": "Weekend afternoon",
+      "internal": ""
     },
     {
       "number": "004",
       "area": "Tai Kwun / Central",
-      "locationClue": "A courtyard where the city becomes slower for a few minutes.",
-      "dropWindow": "After school hours",
-      "internalNote": ""
+      "clue": "Near stone, history, and slow footsteps.",
+      "drop": "After school hours",
+      "internal": ""
     },
     {
       "number": "005",
       "area": "Tsim Sha Tsui waterfront",
-      "locationClue": "Look where tourists take photos and locals walk without stopping.",
-      "dropWindow": "Evening",
-      "internalNote": ""
+      "clue": "Where lights cross the harbour.",
+      "drop": "Evening",
+      "internal": ""
     },
     {
       "number": "006",
       "area": "Mong Kok",
-      "locationClue": "In the loudest district, find the quiet paper object.",
-      "dropWindow": "Night",
-      "internalNote": ""
+      "clue": "In the loudest part of the city, find something quiet.",
+      "drop": "Night",
+      "internal": ""
     },
     {
       "number": "007",
       "area": "Sham Shui Po",
-      "locationClue": "Fabric, old shops, neon memories, and a letter folded into the city.",
-      "dropWindow": "Weekend",
-      "internalNote": ""
+      "clue": "Near old textures, fabric, paper, and repair shops.",
+      "drop": "Weekend",
+      "internal": ""
     },
     {
       "number": "008",
       "area": "Causeway Bay",
-      "locationClue": "Near the rush, but not inside the rush.",
-      "dropWindow": "After school",
-      "internalNote": ""
+      "clue": "In the rush, pause near a corner that everyone passes.",
+      "drop": "After school",
+      "internal": ""
     },
     {
       "number": "009",
       "area": "University / campus edge",
-      "locationClue": "A place where someone might read before leaving.",
-      "dropWindow": "Morning",
-      "internalNote": ""
+      "clue": "Close to a place where people leave with books and questions.",
+      "drop": "Morning",
+      "internal": ""
     }
   ]
 }
