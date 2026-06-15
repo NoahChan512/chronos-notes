@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - file: "content/site.json"
+        label: "Main Site"
+        name: "main"
+        fields:
+          - {label: "Brand name", name: "brandName", widget: "string"}
+          - {label: "Instagram URL", name: "instagramUrl", widget: "string"}
+          - {label: "Threads URL", name: "threadsUrl", widget: "string"}
+          - {label: "Hero headline", name: "heroHeadline", widget: "string"}
+          - {label: "Hero Chinese line", name: "heroZh", widget: "string"}
+  - name: "letters"
+    label: "Letter Locations"
+    files:
+      - file: "content/letters.json"
+        label: "Letter Locations"
+        name: "letters"
+        fields:
+          - label: "Letters"
+            name: "letters"
+            widget: "list"
+            fields:
+              - {label: "Public number", name: "number", widget: "string", hint: "001, 002, 003"}
+              - {label: "Area", name: "area", widget: "string"}
+              - {label: "Location clue", name: "clue", widget: "text"}
+              - {label: "Drop window", name: "drop", widget: "string"}
+              - {label: "Internal note", name: "internal", widget: "text", required: false}

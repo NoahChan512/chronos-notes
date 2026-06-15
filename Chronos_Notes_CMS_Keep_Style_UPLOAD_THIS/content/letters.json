@@ -1,0 +1,67 @@
+{
+  "letters": [
+    {
+      "number": "001",
+      "area": "Central Pier",
+      "clue": "Near the harbour, where the city opens into water.",
+      "drop": "Sunset / early evening",
+      "internal": ""
+    },
+    {
+      "number": "002",
+      "area": "Kennedy Town",
+      "clue": "Look for the edge of the island, close to coffee and sea wind.",
+      "drop": "Late afternoon",
+      "internal": ""
+    },
+    {
+      "number": "003",
+      "area": "Sheung Wan",
+      "clue": "Somewhere between old signs, stairs, and quiet shops.",
+      "drop": "Weekend afternoon",
+      "internal": ""
+    },
+    {
+      "number": "004",
+      "area": "Tai Kwun / Central",
+      "clue": "Near stone, history, and slow footsteps.",
+      "drop": "After school hours",
+      "internal": ""
+    },
+    {
+      "number": "005",
+      "area": "Tsim Sha Tsui waterfront",
+      "clue": "Where lights cross the harbour.",
+      "drop": "Evening",
+      "internal": ""
+    },
+    {
+      "number": "006",
+      "area": "Mong Kok",
+      "clue": "In the loudest part of the city, find something quiet.",
+      "drop": "Night",
+      "internal": ""
+    },
+    {
+      "number": "007",
+      "area": "Sham Shui Po",
+      "clue": "Near old textures, fabric, paper, and repair shops.",
+      "drop": "Weekend",
+      "internal": ""
+    },
+    {
+      "number": "008",
+      "area": "Causeway Bay",
+      "clue": "In the rush, pause near a corner that everyone passes.",
+      "drop": "After school",
+      "internal": ""
+    },
+    {
+      "number": "009",
+      "area": "University / campus edge",
+      "clue": "Close to a place where people leave with books and questions.",
+      "drop": "Morning",
+      "internal": ""
+    }
+  ]
+}
