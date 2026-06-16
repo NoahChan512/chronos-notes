@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: NoahChan512/chronos-notes
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 local_backend: false
 

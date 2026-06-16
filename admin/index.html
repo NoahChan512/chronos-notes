@@ -4,48 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chronos Notes CMS</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <script>
-    (function () {
-      function getHashParams() {
-        const raw = window.location.hash || '';
-        const query = raw.includes('?') ? raw.split('?')[1] : raw.replace(/^#\/?/, '');
-        return new URLSearchParams(query);
-      }
-
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', function (user) {
-          if (!user) {
-            const hash = window.location.hash || '';
-            const params = getHashParams();
-
-            const hasInvite = hash.includes('invite_token') || params.has('invite_token');
-            const hasConfirmation = hash.includes('confirmation_token') || params.has('confirmation_token');
-            const hasRecovery = hash.includes('recovery_token') || params.has('recovery_token');
-            const hasAccess = hash.includes('access_token') || params.has('access_token');
-
-            // Netlify invite / confirmation links sometimes use different token names.
-            // Open signup when the user is being asked to create their first password.
-            if (hasInvite || hasConfirmation) {
-              window.netlifyIdentity.open('signup');
-            } else if (hasRecovery || hasAccess) {
-              window.netlifyIdentity.open('recovery');
-            }
-          }
-        });
-
-        window.netlifyIdentity.on('login', function () {
-          window.location.href = '/admin/';
-        });
-
-        window.netlifyIdentity.on('signup', function () {
-          window.location.href = '/admin/';
-        });
-      }
-    })();
-  </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
