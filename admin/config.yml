@@ -2,35 +2,48 @@ backend:
   name: git-gateway
   branch: main
 
+local_backend: false
+
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
   - name: "site"
-    label: "Site Settings"
+    label: "Site settings / 網站設定"
     files:
       - file: "content/site.json"
-        label: "Main Site"
-        name: "main"
+        label: "Main website copy"
+        name: "site"
         fields:
           - {label: "Brand name", name: "brandName", widget: "string"}
-          - {label: "Instagram URL", name: "instagramUrl", widget: "string"}
-          - {label: "Threads URL", name: "threadsUrl", widget: "string"}
-          - {label: "Hero headline", name: "heroHeadline", widget: "string"}
-          - {label: "Hero Chinese line", name: "heroZh", widget: "string"}
+          - {label: "Logo", name: "logo", widget: "image", required: false}
+          - {label: "Kicker", name: "kicker", widget: "string"}
+          - {label: "Hero title", name: "heroTitle", widget: "string"}
+          - {label: "Hero lead", name: "heroLead", widget: "string"}
+          - {label: "Hero Chinese", name: "heroZh", widget: "string"}
+          - {label: "Story title", name: "storyTitle", widget: "string"}
+          - {label: "Story lead", name: "storyLead", widget: "string"}
+          - {label: "Story Chinese", name: "storyZh", widget: "string"}
+          - {label: "Product text", name: "productText", widget: "text"}
+          - {label: "Product Chinese", name: "productZh", widget: "text"}
+          - {label: "Discovery text", name: "discoveryText", widget: "text"}
+          - {label: "Discovery Chinese", name: "discoveryZh", widget: "text"}
+          - {label: "Instagram URL", name: "instagram", widget: "string"}
+          - {label: "Threads URL", name: "threads", widget: "string"}
   - name: "letters"
-    label: "Letter Locations"
+    label: "Letter locations / 信件地點"
     files:
       - file: "content/letters.json"
-        label: "Letter Locations"
+        label: "Letter passwords and locations"
         name: "letters"
         fields:
           - label: "Letters"
             name: "letters"
             widget: "list"
+            summary: "{{fields.number}} — {{fields.area}}"
             fields:
-              - {label: "Public number", name: "number", widget: "string", hint: "001, 002, 003"}
+              - {label: "Public password number", name: "number", widget: "string", hint: "Use 001, 002, 003 only. Public site will not show HK-XXX."}
               - {label: "Area", name: "area", widget: "string"}
-              - {label: "Location clue", name: "clue", widget: "text"}
-              - {label: "Drop window", name: "drop", widget: "string"}
-              - {label: "Internal note", name: "internal", widget: "text", required: false}
+              - {label: "Location clue", name: "locationClue", widget: "text"}
+              - {label: "Drop window", name: "dropWindow", widget: "string", required: false}
+              - {label: "Internal note", name: "internalNote", widget: "text", required: false}
